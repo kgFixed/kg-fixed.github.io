@@ -6,11 +6,13 @@ Montrer les avancées des recherches et des résultats déjà obtenus.
 
 Ajout de ce code dans package.json pour permettre l'ajout de github pages:
 
-```"name": "kg-fixed",
+```
+"name": "kg-fixed",
 "private": true,
 "version": "0.0.0",
 "type": "module",
-"homepage": "https://kgfixed.github.io/kg-fixed.github.io/",```
+"homepage": "https://kgfixed.github.io/kg-fixed.github.io/",
+```
 
 Modification des informations dans vite.config.ts avec l'ajout de :
 
