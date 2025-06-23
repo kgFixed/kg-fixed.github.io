@@ -1,6 +1,23 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import "../assets/css/navBar.css"
 
 const NavBar: React.FC = () => {
+
+  let nav = useNavigate();
+
+  const handleClickHome = () => {
+    nav('/');
+  }
+
+  const handleClickRor = () => {
+    nav('/ror');
+  }
+
+  const handleClickOrcid = () => {
+    nav('/orcid');
+  }
+
   return (
     <nav className="navbar bg-body-tertiary fixed-top">
       <div className="container-fluid">
@@ -23,7 +40,7 @@ const NavBar: React.FC = () => {
           aria-labelledby="offcanvasNavbarLabel"
         >
           <div className="offcanvas-header">
-            <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <h5 className="offcanvas-title" id="offcanvasNavbarLabel">VLIZ</h5>
             <button 
               type="button" 
               className="btn-close" 
@@ -35,27 +52,14 @@ const NavBar: React.FC = () => {
           <div className="offcanvas-body">
             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">Home</a>
+                {/* <a className="nav-link active" aria-current="page" href="#">Home</a> */}
+                <p className="link" onClick={handleClickHome}>Home</p>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Link</a>
+                <p className="link" onClick={handleClickRor}>ROR.org</p>
               </li>
               <li className="nav-item dropdown">
-                <a 
-                  className="nav-link dropdown-toggle" 
-                  href="#" 
-                  role="button" 
-                  data-bs-toggle="dropdown" 
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">Action</a></li>
-                  <li><a className="dropdown-item" href="#">Another action</a></li>
-                  <li><hr className="dropdown-divider" /></li>
-                  <li><a className="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                <p className="link" onClick={handleClickOrcid}>ORCID.org</p>
               </li>
             </ul>
             
