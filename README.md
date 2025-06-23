@@ -31,5 +31,7 @@ npm run deploy / C'est cela qui publie la page
 
 Ensuite attendre quelques minutes pour voir les modifications au lien :
 
-- https://kgfixed.github.io/kg-fixed.github.io/
+```
+https://kgfixed.github.io/kg-fixed.github.io/
+```
 
