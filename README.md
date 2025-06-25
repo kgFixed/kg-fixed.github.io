@@ -1,10 +1,10 @@
-## Objectif du site
+## Purpose of the site
 
-Montrer les avancées des recherches et des résultats déjà obtenus.
+Show the progress of research and the results already obtained.
 
-## Comment faire pour afficher les github pages
+## How to display github pages
 
-Ajout de ce code dans package.json pour permettre l'ajout de github pages:
+Add this code to package.json to enable github pages to be added:
 
 ```
 "name": "kg-fixed",
@@ -14,22 +14,22 @@ Ajout de ce code dans package.json pour permettre l'ajout de github pages:
 "homepage": "https://kgfixed.github.io/kg-fixed.github.io/",
 ```
 
-Modification des informations dans vite.config.ts avec l'ajout de :
+Modification of the information in vite.config.ts with the addition of :
 
 ```
 base: './',
 ```
 
-Cela m'a permit d'avoir bien accès à mes données dans le dossier assets de github-pages.
+This allowed me to access my data in the assets folder of github-pages.
 
-Pour lancer la publication de la page après modification du frontend:
+To publish the page after modifying the frontend:
 
 ```
-npm run build / build le projet
-npm run deploy / C'est cela qui publie la page
+npm run build / build the projet
+npm run deploy / This is what publishes the
 ```
 
-Ensuite attendre quelques minutes pour voir les modifications au lien :
+Then wait a few minutes to see the changes to the link:
 
 ```
 https://kgfixed.github.io/kg-fixed.github.io/
